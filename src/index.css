@@ -1,0 +1,93 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --border: #e3e6ea;
+  --text: #1f2933;
+  --muted: #6b7280;
+  --accent: #1e2a52;
+  --ok: #197b3a;
+  --err: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 16px 60px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card h2 {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="url"] {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 14px;
+  background: #fff;
+}
+
+input.is-invalid {
+  border-color: var(--err);
+}
+
+.invalid-feedback {
+  color: var(--err);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 4px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  min-height: 18px;
+  color: var(--ok);
+}
